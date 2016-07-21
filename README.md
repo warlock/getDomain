@@ -1,6 +1,8 @@
 # getDomain
 Get domain or hostname from url
 
+https://www.npmjs.com/package/getdomain
+
 ## INSTALL:
 ```
 npm install getdomain
