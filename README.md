@@ -1,6 +1,11 @@
 # getDomain
 Get domain or hostname from url
 
+## INSTALL:
+```
+npm install getdomain
+```
+
 ## GET:
 ```javascript
 var domain = require('getdomain')
