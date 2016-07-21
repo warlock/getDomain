@@ -1,0 +1,23 @@
+{
+  "name": "getdomain",
+  "version": "1.0.0",
+  "description": "Get domain or hostname from url",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warlock/getDomain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warlock/getDomain/issues"
+  },
+  "homepage": "https://github.com/warlock/getDomain#readme"
+}
