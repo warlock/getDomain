@@ -12,8 +12,7 @@ module.exports = {
 		return url.split(':')[0]
 	},
 	origin : function (url) {
-		url = url.indexOf('://') > -1 ? url.split('/')[2] : url.split('/')[0]
-		url = url.split(':')[0]
+		url = this.hostname(url)
 		return url.replace('www.','')
 	}
 }
