@@ -1,6 +1,6 @@
 {
   "name": "getdomain",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get domain or hostname from url",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/warlock/getDomain.git"
   },
-  "keywords": [],
+  "keywords": ["domain","hostname","domain","tld", "dns","dig","name","parser","subdomain","seo"],
   "author": "",
   "license": "MIT",
   "bugs": {
