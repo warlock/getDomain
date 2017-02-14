@@ -50,6 +50,12 @@ domain.origin('http://www.npmjs.com/package/spellbook')
 ```
 -> npmjs.com
 
+## Clean, make unique url(clean slash, hash and parameters):
+```javascript
+domain.clean('https://docs.npmjs.com/getting-started/what-is-npm/')
+```
+-> https://docs.npmjs.com/getting-started/what-is-npm
+
 ##License
 
 All the code here is under MIT license. Which means you could do virtually anything with the code. I will appreciate it very much if you keep an attribution where appropriate.

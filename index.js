@@ -14,5 +14,8 @@ module.exports = {
 	origin : function (url) {
 		url = this.hostname(url)
 		return url.replace('www.','')
+	},
+	clean : function (url) {
+		return url.slice(-1) === '/'? url.slice(-1,0) : url
 	}
 }
