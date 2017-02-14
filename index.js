@@ -16,6 +16,6 @@ module.exports = {
 		return url.replace('www.','')
 	},
 	clean : function (url) {
-		return url.slice(-1) === '/'? url.slice(-1,0) : url
+		return url.slice(-1) === '/'? url.slice(0,-1) : url
 	}
 }
