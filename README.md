@@ -61,7 +61,7 @@ domain.clean('https://docs.npmjs.com/getting-started/what-is-npm/#ABC')
 ```
 -> https://docs.npmjs.com/getting-started/what-is-npm
 
-##License
+## License
 
 All the code here is under MIT license. Which means you could do virtually anything with the code. I will appreciate it very much if you keep an attribution where appropriate.
 
