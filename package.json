@@ -1,6 +1,6 @@
 {
   "name": "getdomain",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Get domain or hostname from url",
   "main": "index.js",
   "directories": {
@@ -14,10 +14,10 @@
     "url": "git+https://github.com/warlock/getDomain.git"
   },
   "keywords": ["domain","hostname","domain","tld", "dns","dig","name","parser","subdomain","seo"],
-  "author": "",
+  "author": "Josep Subils <js@js.gl> (http://js.gl)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/warlock/getDomain/issues"
   },
-  "homepage": "https://github.com/warlock/getDomain#readme"
+  "homepage": "http://js.gl"
 }
