@@ -1,7 +1,7 @@
 # getDomain
-Get domain or hostname from url
-
-https://www.npmjs.com/package/getdomain
+> Get domain or hostname from url
+>
+> https://www.npmjs.com/package/getdomain
 
 ## Install module:
 ```
