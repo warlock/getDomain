@@ -1,6 +1,6 @@
 {
   "name": "getdomain",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Get domain or hostname from url",
   "main": "index.js",
   "directories": {
