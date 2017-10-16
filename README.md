@@ -10,9 +10,9 @@ npm install getdomain
 
 ## Get domain:
 ```javascript
-var domain = require('getdomain')
-domain.get('http://npmjs.com/package/spellbook')
-domain.get('http://www.npmjs.com/package/spellbook')
+const domain = require('getdomain')
+domain.get('http://npmjs.com/package/snc')
+domain.get('http://www.npmjs.com/package/snc')
 domain.get('https://docs.npmjs.com/')
 ```
 -> npmjs.com
@@ -24,12 +24,12 @@ domain.hostname('https://docs.npmjs.com/getting-started/what-is-npm')
 -> docs.npmjs.com
 
 ```javascript
-domain.hostname('http://npmjs.com/package/spellbook')
+domain.hostname('http://npmjs.com/package/snc')
 ```
 -> npmjs.com
 
 ```javascript
-domain.hostname('http://www.npmjs.com/package/spellbook')
+domain.hostname('http://www.npmjs.com/package/snc')
 ```
 -> www.npmjs.com
 
@@ -41,12 +41,12 @@ domain.origin('https://docs.npmjs.com/getting-started/what-is-npm')
 -> docs.npmjs.com
 
 ```javascript
-domain.origin('http://npmjs.com/package/spellbook')
+domain.origin('http://npmjs.com/package/snc')
 ```
 -> npmjs.com
 
 ```javascript
-domain.origin('http://www.npmjs.com/package/spellbook')
+domain.origin('http://www.npmjs.com/package/snc')
 ```
 -> npmjs.com
 
