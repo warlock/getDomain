@@ -1,4 +1,4 @@
-module.exports = {
+const getDomain = {
   get: url => {
     url = url.indexOf('://') > -1 ? url.split('/')[2] : url.split('/')[0]
     url = url.split(':')[0]
@@ -12,7 +12,7 @@ module.exports = {
     return url.split(':')[0]
   },
   origin: url => {
-    url = this.hostname(url)
+    url = getDomain.hostname(url)
     return url.replace('www.','')
   },
   clean: url => {
@@ -21,3 +21,5 @@ module.exports = {
     return url.slice(-1) === '/'? url.slice(0,-1) : url
   }
 }
+
+module.exports = getDomain
