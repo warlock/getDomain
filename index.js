@@ -19,6 +19,13 @@ const getDomain = {
     url = url.trim()
     url = url.split('#')[0]
     return url.slice(-1) === '/'? url.slice(0,-1) : url
+  },
+  uniq: url => {
+    url = url.trim()
+    url = url.split('://')[1]
+    url = url.split('#')[0]
+    url = url.slice(0, 4) === 'www.'? url.slice(4) : url
+    return url.slice(-1) === '/'? url.slice(0,-1) : url
   }
 }
 
