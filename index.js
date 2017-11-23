@@ -1,11 +1,9 @@
 const getDomain = {
   get: url => {
-    url = url.indexOf('://') > -1 ? url.split('/')[2] : url.split('/')[0]
-    url = url.split(':')[0]
+    url = getDomain.hostname(url)
     url = url.split('.')
-    var len = url.length
-    if (len === 2) return url.join('.')
-    else return url[len - 2] + '.' + url[len - 1]
+    if (url[url.length - 2] === 'co') return url[url.length - 3] + '.' + url[url.length - 2] + '.' + url[url.length - 1]
+    else return url[url.length - 2] + '.' + url[url.length - 1]
   },
   hostname: url => {
     url = url.indexOf('://') > -1 ? url.split('/')[2] : url.split('/')[0]
@@ -13,7 +11,7 @@ const getDomain = {
   },
   origin: url => {
     url = getDomain.hostname(url)
-    return url.replace('www.','')
+    return url.slice(0, 4) === 'www.'? url.slice(4) : url
   },
   clean: url => {
     url = url.trim()
@@ -23,8 +21,7 @@ const getDomain = {
   uniq: url => {
     url = getDomain.clean(url)
     url = url.split('://')[1]
-    url = url.slice(0, 4) === 'www.'? url.slice(4) : url
-    return url.slice(-1) === '/'? url.slice(0,-1) : url
+    return url.slice(0, 4) === 'www.'? url.slice(4) : url
   }
 }
 
