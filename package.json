@@ -13,11 +13,25 @@
     "type": "git",
     "url": "git+https://github.com/warlock/getDomain.git"
   },
-  "keywords": ["domain","hostname","domain","tld", "dns","dig","name","parser","subdomain","seo"],
+  "keywords": [
+    "domain",
+    "hostname",
+    "domain",
+    "tld",
+    "dns",
+    "dig",
+    "name",
+    "parser",
+    "subdomain",
+    "seo"
+  ],
   "author": "Josep Subils <js@js.gl> (http://js.gl)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/warlock/getDomain/issues"
   },
-  "homepage": "http://js.gl"
+  "homepage": "http://js.gl",
+  "dependencies": {
+    "publicsuffixlist": "^0.2.8"
+  }
 }

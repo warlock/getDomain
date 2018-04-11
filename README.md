@@ -17,6 +17,11 @@ domain.get('https://docs.npmjs.com/')
 ```
 -> npmjs.com
 
+```javascript
+domain.get('http://this.is.my.buschoolname.wa.edu.au')
+```
+-> buschoolname.wa.edu.au
+
 ## Get hostname:
 ```javascript
 domain.hostname('https://docs.npmjs.com/getting-started/what-is-npm')
@@ -60,6 +65,13 @@ domain.clean('https://docs.npmjs.com/getting-started/what-is-npm/')
 domain.clean('https://docs.npmjs.com/getting-started/what-is-npm/#ABC')
 ```
 -> https://docs.npmjs.com/getting-started/what-is-npm
+
+## Clean url for make a unique id:
+```javascript
+domain.uniq('https://docs.npmjs.com/getting-started/what-is-npm#top')
+```
+-> docs.npmjs.com/getting-started/what-is-npm
+
 
 ## License
 
