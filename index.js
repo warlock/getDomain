@@ -4,7 +4,8 @@ psl.initializeSync()
 
 const getDomain = {
   get (url) {
-    const res = psl.lookup(url)
+    const origin = getDomain.origin(url)
+    const res = psl.lookup(origin)
     return `${res.domain}.${res.tld}`
   },
   hostname (url) {
