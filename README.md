@@ -22,6 +22,12 @@ domain.get('http://this.is.my.buschoolname.wa.edu.au')
 ```
 -> buschoolname.wa.edu.au
 
+## Get TLD:
+```javascript
+domain.get('http://npm.co.uk/package/snc')
+```
+-> co.uk
+
 ## Get hostname:
 ```javascript
 domain.hostname('https://docs.npmjs.com/getting-started/what-is-npm')
