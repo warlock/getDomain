@@ -27,7 +27,7 @@ const getDomain = {
   uniq (url) {
     const cleanurl = getDomain.clean(url)
     const spliturl = cleanurl.split('://')[1]
-    return spliturl !== undefined && spliturl.slice(0, 4) === 'www.'? spliturl.slice(4) : cleanurl
+    return spliturl !== undefined && spliturl.slice(0, 4) === 'www.'? spliturl.slice(4) : spliturl
   }
 }
 
